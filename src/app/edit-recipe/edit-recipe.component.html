@@ -1,0 +1,14 @@
+<div class="container">
+  <form *ngIf="recipe">
+  <h3>Edit recipe {{recipe.title}}</h3><br>
+  <label>Resipe Title</label>
+  <input [(ngModel)]="recipe.title" type="text" name="title"><br> <label>Ingredients</label>
+  <input [(ngModel)]="recipe.ingredients" type="text" name="ingredients"><br>
+  <label>Direction</label>
+  <input [(ngModel)]="recipe.direction" type="text" name="direction">
+  <button (click)="done()" class="btn btn-primary">Done</button>
+  </form>
+</div>
+<div>
+  Edit recipe with id = {{recipeId}}
+  </div>
