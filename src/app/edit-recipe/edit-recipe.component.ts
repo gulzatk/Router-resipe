@@ -9,6 +9,7 @@ import { MyServices } from '../services/my-services';
   templateUrl: './edit-recipe.component.html',
   styleUrls: ['./edit-recipe.component.css']
 })
+
 export class EditRecipeComponent implements OnInit{
   recipeId: number = null;
   recipe: Recipe = null;
@@ -20,7 +21,7 @@ export class EditRecipeComponent implements OnInit{
       this.recipeId = parseInt(urlParameters['id']);
     });
 
-    this.recipe = this.myServices.getRecipe(this.recipeId);
+ 
   }
 
 }

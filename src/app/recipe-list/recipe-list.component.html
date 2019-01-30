@@ -1,7 +1,9 @@
 <h2> Listing Page </h2>
-<ul>
-  <li *ngFor="let recipe of childRecipeList">{{recipe.title}}
-    <button (click)="details(recipe)"class="btn btn-success">Details</button>
+
+  <div *ngFor="let recipe of recipes | async" (click)="details(recipe)" class="panel panel-default">
+    <div class="panel-body">
+    <h3><em>{{recipe.title}}</em></h3>
     <button (click)="edit(recipe)"class="btn btn-success">Edit</button>
-  </li>
-</ul>
+  </div>
+  </div>
+

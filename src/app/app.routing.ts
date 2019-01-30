@@ -4,6 +4,8 @@ import { RecipeListComponent } from './recipe-list/recipe-list.component';
 import { NewRecipeComponent } from './new-recipe/new-recipe.component';
 import { RecipeDetailsComponent } from './recipe-details/recipe-details.component';
 import { EditRecipeComponent } from './edit-recipe/edit-recipe.component';
+import { AdminComponent }   from './admin/admin.component';
+
 
 const appRoutes: Routes = [
   {
@@ -21,6 +23,10 @@ const appRoutes: Routes = [
  {
    path: 'edit/:id',
   component: EditRecipeComponent
+},
+{
+  path: 'admin',
+  component: AdminComponent
 }
 ];
 

@@ -1,0 +1,26 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Add New Recipe to the List</h3>
+    </div>
+    <div class="panel-body">
+      <div>
+        <div>
+    <label>Recipe Title:</label>
+    <br>
+    <input #newTitle>
+  </div>
+
+  <div>
+    <label>Recipe Ingredients:</label>
+    <br>
+    <input #newIngredients>
+  </div>
+
+  <div>
+    <label>Recipe Directions:</label>
+    <br>
+    <textarea #newDirections></textarea>
+  </div>
+  <button (click)="submitForm(newTitle.value, newIngredients.value, newDirections.value)">Add</button>
+
+</div>

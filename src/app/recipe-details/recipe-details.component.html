@@ -1,4 +1,7 @@
-<p>
-  recipe-details with id = {{recipeId}}
-  Title is {{recipe.title}}
-</p>
+<div>
+  <h3>{{(recipeToDisplay | async)?.title}}</h3>
+  <h4>Ingredients: </h4>
+    <p>{{(recipeToDisplay | async)?.ingredients}}</p>
+  <h4>Direction:</h4>
+  <p>{{(recipeToDisplay | async)?.direction}}</p>
+</div>
